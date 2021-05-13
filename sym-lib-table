@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name WemosDecatron-rescue)(type Legacy)(uri ${KIPRJMOD}/WemosDecatron-rescue.lib)(options "")(descr ""))
+  (lib (name ModularRev3External-rescue)(type Legacy)(uri ${KIPRJMOD}/ModularRev3External-rescue.lib)(options "")(descr ""))
+  (lib (name WemosDecatronExternal-rescue)(type Legacy)(uri ${KIPRJMOD}/WemosDecatronExternal-rescue.lib)(options "")(descr ""))
+)
