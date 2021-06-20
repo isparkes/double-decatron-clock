@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Wemos D1 A-101 decatron clock"
-Date "2020-06-02"
-Rev "Rev 001"
-Comp "Ian Sparkes Nixie Clocks"
+Title "Two Decatron clock"
+Date "2021-06-20"
+Rev "Rev 002"
+Comp "Ian Sparkes"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -529,7 +529,7 @@ Wire Wire Line
 	12000 4400 12000 5250
 Connection ~ 12850 3800
 Text Label 14200 3800 0    60   ~ 0
-170V
+150V
 Text Notes 11450 1250 0    70   ~ 0
 High Voltage Generator
 Wire Wire Line
@@ -826,7 +826,7 @@ L Connector_Generic:Conn_01x05 J1
 U 1 1 5EE09AB4
 P 15060 7670
 F 0 "J1" H 14978 7245 50  0000 C CNN
-F 1 "Conn_01x05" H 14978 7336 50  0000 C CNN
+F 1 "Decatron1" H 14978 7336 50  0000 C CNN
 F 2 "NixieClockMaster:Header_MA05-1" H 15060 7670 50  0001 C CNN
 F 3 "~" H 15060 7670 50  0001 C CNN
 	1    15060 7670
@@ -843,7 +843,7 @@ Wire Wire Line
 Wire Wire Line
 	14860 7470 14410 7470
 Text Label 14410 7470 2    60   ~ 0
-400V
+400V_1
 Text Label 14410 7870 2    60   ~ 0
 G1_1
 Text Label 14410 7770 2    60   ~ 0
@@ -1131,8 +1131,8 @@ Connection ~ 11800 2250
 Wire Wire Line
 	12850 1750 13100 1750
 Connection ~ 12850 1750
-Text Label 13700 1750 0    60   ~ 0
-400V
+Text Label 13800 1590 0    60   ~ 0
+400V_1
 $Comp
 L WemosDecatron-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5EF9CCF4
@@ -1427,12 +1427,12 @@ Wire Wire Line
 $Comp
 L Device:R R16
 U 1 1 5F04D475
-P 13350 1750
-F 0 "R16" V 13350 1700 50  0000 L CNN
-F 1 "470k" V 13450 1650 50  0000 L CNN
-F 2 "NixieClockMaster:R-0207_2V" V 13280 1750 50  0001 C CNN
-F 3 "~" H 13350 1750 50  0001 C CNN
-	1    13350 1750
+P 13450 1590
+F 0 "R16" V 13450 1540 50  0000 L CNN
+F 1 "470k" V 13550 1490 50  0000 L CNN
+F 2 "NixieClockMaster:R-0207_2V" V 13380 1590 50  0001 C CNN
+F 3 "~" H 13450 1590 50  0001 C CNN
+	1    13450 1590
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1513,7 +1513,7 @@ Wire Wire Line
 	13100 1750 13200 1750
 Connection ~ 13100 1750
 Wire Wire Line
-	13500 1750 13700 1750
+	13600 1590 13800 1590
 $Comp
 L WemosDecatron-rescue:SolderJumper_2_Open-Jumper JP1
 U 1 1 5F3529BC
@@ -1732,7 +1732,7 @@ L Connector_Generic:Conn_01x05 J4
 U 1 1 60A471FA
 P 15060 8630
 F 0 "J4" H 14978 8205 50  0000 C CNN
-F 1 "Conn_01x05" H 14978 8296 50  0000 C CNN
+F 1 "Decatron2" H 14978 8296 50  0000 C CNN
 F 2 "NixieClockMaster:Header_MA05-1" H 15060 8630 50  0001 C CNN
 F 3 "~" H 15060 8630 50  0001 C CNN
 	1    15060 8630
@@ -1749,7 +1749,7 @@ Wire Wire Line
 Wire Wire Line
 	14860 8430 14410 8430
 Text Label 14410 8430 2    60   ~ 0
-400V
+400V_2
 Text Label 14410 8830 2    60   ~ 0
 G1_2
 Text Label 14410 8730 2    60   ~ 0
@@ -1768,4 +1768,28 @@ Text Label 5500 8300 2    60   ~ 0
 G2_2_B
 Wire Wire Line
 	4200 4700 5050 4700
+Text Label 13790 1910 0    60   ~ 0
+400V_2
+$Comp
+L Device:R R2
+U 1 1 60D40249
+P 13440 1910
+F 0 "R2" V 13440 1860 50  0000 L CNN
+F 1 "470k" V 13540 1810 50  0000 L CNN
+F 2 "NixieClockMaster:R-0207_2V" V 13370 1910 50  0001 C CNN
+F 3 "~" H 13440 1910 50  0001 C CNN
+	1    13440 1910
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13590 1910 13790 1910
+Wire Wire Line
+	13300 1590 13200 1590
+Wire Wire Line
+	13200 1590 13200 1750
+Wire Wire Line
+	13200 1750 13200 1910
+Wire Wire Line
+	13200 1910 13290 1910
+Connection ~ 13200 1750
 $EndSCHEMATC
