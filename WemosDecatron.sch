@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Two Decatron clock"
-Date "2021-06-20"
+Title "Wemos D1 Two Decatron clock"
+Date "2021-08-13"
 Rev "Rev 002"
-Comp "Ian Sparkes"
+Comp "Glowtime Ltd."
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -457,7 +457,7 @@ U 1 1 5BDEB95E
 P 12850 4400
 F 0 "C13" H 12950 4500 70  0000 L BNN
 F 1 "1uF 250V" H 12900 4250 70  0000 L BNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 12840 4190 70  0001 L TNN
+F 2 "NixieClockMaster:CP_Radial_D5.0mm_P2.00mm" H 12840 4190 70  0001 L TNN
 F 3 "" H 12850 4400 60  0001 C CNN
 F 4 "Value" H 12700 4100 60  0001 C CNN "Fieldname"
 F 5 "+" V 12827 4416 50  0000 L BNN "Field5"
@@ -582,7 +582,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 8200 4150 8200
 NoConn ~ 4150 8600
-Text Label 5500 8000 2    60   ~ 0
+Text Label 3800 8100 0    60   ~ 0
 G1_1_B
 Text Notes 3600 1050 0    70   ~ 0
 RTC (option)
@@ -815,11 +815,11 @@ Wire Wire Line
 	2100 2150 2900 2150
 Wire Wire Line
 	5150 8100 5500 8100
-Text Label 5500 8100 2    60   ~ 0
+Text Label 3800 8200 0    60   ~ 0
 G2_1_B
 Wire Wire Line
 	5150 8200 5500 8200
-Text Label 3800 8100 0    60   ~ 0
+Text Label 5500 8400 2    60   ~ 0
 IDX1
 $Comp
 L Connector_Generic:Conn_01x05 J1
@@ -1003,7 +1003,7 @@ U 1 1 5EEF0CBB
 P 11800 3550
 F 0 "C2" H 11900 3650 70  0000 L BNN
 F 1 "1uF 250V" H 11250 3700 70  0000 L BNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 11790 3340 70  0001 L TNN
+F 2 "NixieClockMaster:CP_Radial_D5.0mm_P2.00mm" H 11790 3340 70  0001 L TNN
 F 3 "" H 11800 3550 60  0001 C CNN
 F 4 "Value" H 11650 3250 60  0001 C CNN "Fieldname"
 F 5 "+" V 11777 3566 50  0000 L BNN "Field5"
@@ -1020,7 +1020,7 @@ U 1 1 5EF04A5D
 P 12850 3000
 F 0 "C4" H 12950 3100 70  0000 L BNN
 F 1 "1uF 250V" H 12950 2850 70  0000 L BNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 12840 2790 70  0001 L TNN
+F 2 "NixieClockMaster:CP_Radial_D5.0mm_P2.00mm" H 12840 2790 70  0001 L TNN
 F 3 "" H 12850 3000 60  0001 C CNN
 F 4 "Value" H 12700 2700 60  0001 C CNN "Fieldname"
 F 5 "+" V 12827 3016 50  0000 L BNN "Field5"
@@ -1062,7 +1062,7 @@ U 1 1 5EF451D6
 P 11800 2500
 F 0 "C1" H 11900 2600 70  0000 L BNN
 F 1 "1uF 250V" H 11250 2650 70  0000 L BNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 11790 2290 70  0001 L TNN
+F 2 "NixieClockMaster:CP_Radial_D5.0mm_P2.00mm" H 11790 2290 70  0001 L TNN
 F 3 "" H 11800 2500 60  0001 C CNN
 F 4 "Value" H 11650 2200 60  0001 C CNN "Fieldname"
 F 5 "+" V 11777 2516 50  0000 L BNN "Field5"
@@ -1098,7 +1098,7 @@ U 1 1 5EF68E38
 P 12850 2000
 F 0 "C3" H 12950 2100 70  0000 L BNN
 F 1 "1uF 250V" H 12950 1850 70  0000 L BNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 12840 1790 70  0001 L TNN
+F 2 "NixieClockMaster:CP_Radial_D5.0mm_P2.00mm" H 12840 1790 70  0001 L TNN
 F 3 "" H 12850 2000 60  0001 C CNN
 F 4 "Value" H 12700 1700 60  0001 C CNN "Fieldname"
 F 5 "+" V 12827 2016 50  0000 L BNN "Field5"
@@ -1404,7 +1404,7 @@ Wire Wire Line
 	5150 8300 5500 8300
 Wire Wire Line
 	5150 8400 5500 8400
-Text Label 5500 8400 2    60   ~ 0
+Text Label 5500 8000 2    60   ~ 0
 HV_EN
 $Comp
 L WemosDecatron-rescue:TEST_1P-4DigitIN12Main-rescue-4DigitIN12Main-rescue W8
@@ -1760,7 +1760,7 @@ Text Label 14410 8530 2    60   ~ 0
 IDX_IN2
 Wire Wire Line
 	4150 8500 3800 8500
-Text Label 3800 8200 0    60   ~ 0
+Text Label 5500 8100 2    60   ~ 0
 IDX2
 Text Label 5500 8200 2    60   ~ 0
 G1_2_B
