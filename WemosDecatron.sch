@@ -150,7 +150,7 @@ F 3 "" H 1550 7600 60  0001 C CNN
 	1    1550 7600
 	1    0    0    -1  
 $EndComp
-Text Label 1850 9500 0    65   ~ 0
+Text Label 1900 9400 0    65   ~ 0
 BTN1
 $Comp
 L WemosDecatron-rescue:TEST_1P-4DigitIN12Main-rescue-4DigitIN12Main-rescue W2
@@ -164,11 +164,11 @@ F 3 "" H 1650 7400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 9600 1850 9600
+	1700 9500 1900 9500
 Wire Wire Line
 	1450 7500 1550 7500
 Wire Wire Line
-	1650 9500 1850 9500
+	1700 9400 1900 9400
 Wire Wire Line
 	1450 7500 1450 7400
 $Comp
@@ -206,7 +206,7 @@ F 3 "" H 3000 7700 50  0001 C CNN
 	1    3000 7700
 	1    0    0    -1  
 $EndComp
-Text Notes 950  8150 0    70   ~ 0
+Text Notes 700  8700 0    70   ~ 0
 Front panel components
 $Comp
 L WemosDecatron-rescue:WeMos_mini-4DigitIN12Main-rescue-4DigitIN12Main-rescue U2
@@ -257,8 +257,8 @@ SDA
 Text Label 3800 8400 0    60   ~ 0
 SCL
 Wire Wire Line
-	1650 9400 1850 9400
-Text Label 1850 9400 0    60   ~ 0
+	1700 9300 1900 9300
+Text Label 1900 9300 0    60   ~ 0
 PIR
 Wire Wire Line
 	5150 8000 5500 8000
@@ -1382,23 +1382,23 @@ $EndComp
 Wire Wire Line
 	13100 1650 13100 1750
 Wire Wire Line
-	1650 9300 1850 9300
+	1700 9200 1900 9200
 $Comp
 L Connector_Generic:Conn_01x05 J2
 U 1 1 5EE19E6E
-P 1450 9400
-F 0 "J2" H 1368 8775 50  0000 C CNN
-F 1 "Conn_01x05" H 1368 8866 50  0000 C CNN
-F 2 "NixieClockMaster:Header_MA05-1" H 1450 9400 50  0001 C CNN
-F 3 "~" H 1450 9400 50  0001 C CNN
-	1    1450 9400
+P 1500 9300
+F 0 "J2" H 1500 9650 50  0000 C CNN
+F 1 "Front Panel" H 1250 8900 50  0000 C CNN
+F 2 "NixieClockMaster:Header_MA05-1" H 1500 9300 50  0001 C CNN
+F 3 "~" H 1500 9300 50  0001 C CNN
+	1    1500 9300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1650 9200 1850 9200
-Text Label 1850 9300 0    60   ~ 0
+	1700 9100 1900 9100
+Text Label 1900 9200 0    60   ~ 0
 VCC
-Text Label 1850 9200 0    60   ~ 0
+Text Label 1900 9100 0    60   ~ 0
 3V3
 Wire Wire Line
 	5150 8300 5500 8300
@@ -1502,7 +1502,7 @@ Text Label 11550 5450 0    60   ~ 0
 HV_EN
 Wire Wire Line
 	11550 5450 12100 5450
-Text Label 1850 9600 0    65   ~ 0
+Text Label 1900 9500 0    65   ~ 0
 GND
 Wire Wire Line
 	12450 3900 12450 3800
@@ -1792,4 +1792,27 @@ Wire Wire Line
 Wire Wire Line
 	13200 1910 13290 1910
 Connection ~ 13200 1750
+$Comp
+L Device:R R22
+U 1 1 615F0E7A
+P 750 9300
+F 0 "R22" V 543 9300 50  0000 C CNN
+F 1 "10k" V 634 9300 50  0000 C CNN
+F 2 "NixieClockMaster:R-0207_2V" V 680 9300 50  0001 C CNN
+F 3 "~" H 750 9300 50  0001 C CNN
+	1    750  9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  9450 750  9550
+Wire Wire Line
+	750  9550 950  9550
+Text Label 950  9550 0    60   ~ 0
+PIR
+Text Label 850  9050 0    60   ~ 0
+VCC
+Wire Wire Line
+	750  9150 750  9050
+Wire Wire Line
+	750  9050 850  9050
 $EndSCHEMATC
