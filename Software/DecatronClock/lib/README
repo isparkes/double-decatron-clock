@@ -1,0 +1,2 @@
+Project-private libraries go here. This firmware has no external dependencies -
+it uses only the ESP8266 Arduino core (Wire, ESP8266WiFi, time.h).
