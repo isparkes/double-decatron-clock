@@ -53,6 +53,7 @@ clock — see [`Software/DecatronClock/README.md`](Software/DecatronClock/README
 | `Hardware/A101base/` | Dual A101 tube carrier board. KiCad project `A101base`. |
 | `Hardware/WemosDecatronExternal.sch` | Off-board front-panel sheet (button + PIR). Legacy KiCad 4 schematic, documentation only — no PCB, and it still shows an 8-way front connector where the main board now has a 5-way one. Rendered as `WemosDecatronExternal.svg`. |
 | `Hardware/Recovered.pretty/` | Recovered footprints. |
+| `LICENSE` | Attribution / non-commercial terms covering both the hardware and the firmware. |
 | `Software/DecatronClock/` | Standalone clock firmware: hours on one tube, minutes on the other. PlatformIO, ESP8266. |
 | `Software/*.ino`, `Software/*.cpp` | Abandoned v0.1 standalone firmware (Arduino IDE, ESP8266). Reference only. |
 
@@ -187,3 +188,10 @@ The loose sketch at the top of `Software/` is an Arduino IDE project (board:
 *LOLIN(WeMos) D1 R2 & mini*, 4 MB flash / 2 MB FS). It depends on Time (Margolis
 1.5.0) and WiFiManager (tzapu 0.14.0). It is kept for reference only — it is
 incomplete and its pin map is out of date.
+
+## License
+
+Attribution-NonCommercial — see [`LICENSE`](LICENSE). Free to use, modify and build
+for personal, educational and hobbyist purposes, with credit; commercial use,
+including selling boards or kits, needs a separate written license. The same terms
+as the `eniac-firmware` repository.

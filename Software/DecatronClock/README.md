@@ -147,3 +147,8 @@ Deliberately out of scope for this version:
 
 The board this runs on carries **~400 V DC**, and the reservoir capacitors stay
 charged after power-off. See the repository README.
+
+## License
+
+Attribution-NonCommercial — see [`LICENSE`](../../LICENSE) at the root of this
+repository.

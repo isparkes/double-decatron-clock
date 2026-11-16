@@ -1,0 +1,68 @@
+Two Decatron Clock Hardware and Firmware License
+Attribution-NonCommercial
+
+Copyright (c) 2021-2026 Ian Sparkes. All rights reserved.
+
+This license covers the whole of this repository (the "Work"), including the
+hardware design files (schematics, PCB layouts, netlists, footprints, gerbers
+and bills of materials) and the firmware source code and documentation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the Work, to use, copy, modify, merge, publish, and distribute copies of
+the Work, and to manufacture and assemble hardware from it, subject to the
+following conditions:
+
+1. Attribution
+   Any use, copy, or distribution of the Work, or of any derivative work
+   based on the Work, must give clear and reasonably visible credit to
+   Ian Sparkes as the original author, including:
+     - a copy of this license, and
+     - a statement identifying that the work is based on or derived from
+       this Work, with a link to the original repository where one is
+       available.
+   Attribution must not, in any way, suggest that Ian Sparkes endorses you or
+   your use of the Work.
+
+2. Non-Commercial Use Only
+   The Work, and any derivative work based on it, may be used only for
+   non-commercial purposes. Non-commercial means the use is not primarily
+   intended for or directed toward commercial advantage or monetary
+   compensation. This includes, without limitation, a prohibition on:
+     - selling the Work, hardware built from it, bare or assembled boards,
+       kits, or derivative works;
+     - offering paid products or services that incorporate the Work;
+     - using the Work in the course of any business activity intended to
+       generate revenue or profit.
+   Personal, educational, hobbyist, and other not-for-profit uses are
+   permitted under this license, including having boards fabricated for your
+   own use by a commercial board house.
+
+3. Derivative Works
+   You may create derivative works (modified versions, forks, ports, board
+   revisions, or works that incorporate part of the Work) provided such works
+   remain subject to the same Attribution and Non-Commercial requirements set
+   out above, and provided you clearly indicate what changes were made.
+
+4. No Additional Restrictions
+   You may not apply legal terms or technological measures that legally
+   restrict others from doing anything this license permits.
+
+5. Commercial Licensing
+   If you wish to use the Work, or any derivative work based on it, for
+   commercial purposes, you must first obtain a separate written license
+   from Ian Sparkes.
+
+6. No Warranty
+   THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+   THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+   AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK.
+
+7. Safety
+   This design generates and distributes high voltage (approximately 400 V
+   DC) which is capable of causing serious injury or death. You build,
+   assemble, power and operate hardware based on this Work entirely at your
+   own risk. The author accepts no liability for any injury, death, or damage
+   to property arising from its construction or use.
